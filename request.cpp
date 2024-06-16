@@ -1,3 +1,7 @@
+/**
+ * @file request.cpp
+ * @brief Implements the Request struct constructor.
+ */
 #include "request.h"
 
 /**

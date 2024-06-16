@@ -1,0 +1,23 @@
+\hypertarget{loadbalancer_8h}{}\doxysection{loadbalancer.\+h File Reference}
+\label{loadbalancer_8h}\index{loadbalancer.h@{loadbalancer.h}}
+
+
+Implementation of \mbox{\hyperlink{classLoadBalancer}{Load\+Balancer}} class for simulating load balancing of web requests.  
+
+
+{\ttfamily \#include \char`\"{}webserver.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+Include dependency graph for loadbalancer.\+h\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classLoadBalancer}{Load\+Balancer}}
+\begin{DoxyCompactList}\small\item\em Simulates a load balancer that distributes requests among multiple servers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of \mbox{\hyperlink{classLoadBalancer}{Load\+Balancer}} class for simulating load balancing of web requests. 
+

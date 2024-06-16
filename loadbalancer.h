@@ -1,3 +1,8 @@
+/**
+ * @file loadbalancer.h
+ * @brief Defines the LoadBalancer class used to simulate load balancing among multiple web servers.
+ */
+
 #ifndef LOADBALANCER_H
 #define LOADBALANCER_H
 

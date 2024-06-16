@@ -1,0 +1,88 @@
+\hypertarget{classLoadBalancer}{}\doxysection{Load\+Balancer Class Reference}
+\label{classLoadBalancer}\index{LoadBalancer@{LoadBalancer}}
+
+
+Simulates a load balancer that distributes requests among multiple servers.  
+
+
+
+
+{\ttfamily \#include $<$loadbalancer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLoadBalancer_a6114560fd6fd431c75adeab2f0b230a9}{Load\+Balancer}} (int num\+Servers)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classLoadBalancer}{Load\+Balancer}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoadBalancer_abbe825323240d9e8cf8f4b4048c2e0c6}{simulate}} (int max\+Clock)
+\begin{DoxyCompactList}\small\item\em Simulates the load balancing process for a specified number of clock cycles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoadBalancer_abba1a1fcaa67e79e9aee94e903e1458c}{add\+Request}} (const \mbox{\hyperlink{structRequest}{Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Adds a new request to the request queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoadBalancer_a85d1b84579b0c64d2fd3a8b6f25b30ba}\label{classLoadBalancer_a85d1b84579b0c64d2fd3a8b6f25b30ba}} 
+void \mbox{\hyperlink{classLoadBalancer_a85d1b84579b0c64d2fd3a8b6f25b30ba}{update\+Servers}} ()
+\begin{DoxyCompactList}\small\item\em Updates the status of each server and assigns requests if servers are available. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLoadBalancer_ab7c40d6288ba80ea6ae66eaa0933ea14}\label{classLoadBalancer_ab7c40d6288ba80ea6ae66eaa0933ea14}} 
+void \mbox{\hyperlink{classLoadBalancer_ab7c40d6288ba80ea6ae66eaa0933ea14}{print\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Prints the current status of the load balancer simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simulates a load balancer that distributes requests among multiple servers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLoadBalancer_a6114560fd6fd431c75adeab2f0b230a9}\label{classLoadBalancer_a6114560fd6fd431c75adeab2f0b230a9}} 
+\index{LoadBalancer@{LoadBalancer}!LoadBalancer@{LoadBalancer}}
+\index{LoadBalancer@{LoadBalancer}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{LoadBalancer()}{LoadBalancer()}}
+{\footnotesize\ttfamily Load\+Balancer\+::\+Load\+Balancer (\begin{DoxyParamCaption}\item[{int}]{num\+Servers }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classLoadBalancer}{Load\+Balancer}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Servers} & Number of servers to initialize in the load balancer.\\
+\hline
+{\em num\+Servers} & Number of web servers to initialize in the load balancer. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoadBalancer_abba1a1fcaa67e79e9aee94e903e1458c}\label{classLoadBalancer_abba1a1fcaa67e79e9aee94e903e1458c}} 
+\index{LoadBalancer@{LoadBalancer}!addRequest@{addRequest}}
+\index{addRequest@{addRequest}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{addRequest()}{addRequest()}}
+{\footnotesize\ttfamily void Load\+Balancer\+::add\+Request (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structRequest}{Request}} \&}]{request }\end{DoxyParamCaption})}
+
+
+
+Adds a new request to the request queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The request to add to the queue. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLoadBalancer_abbe825323240d9e8cf8f4b4048c2e0c6}\label{classLoadBalancer_abbe825323240d9e8cf8f4b4048c2e0c6}} 
+\index{LoadBalancer@{LoadBalancer}!simulate@{simulate}}
+\index{simulate@{simulate}!LoadBalancer@{LoadBalancer}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void Load\+Balancer\+::simulate (\begin{DoxyParamCaption}\item[{int}]{max\+Clock }\end{DoxyParamCaption})}
+
+
+
+Simulates the load balancing process for a specified number of clock cycles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Clock} & Maximum number of clock cycles to simulate. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{loadbalancer_8h}{loadbalancer.\+h}}\item 
+\mbox{\hyperlink{loadbalancer_8cpp}{loadbalancer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,3 +1,8 @@
+/**
+ * @file request.h
+ * @brief Defines the Request struct used to represent a web request in the load balancer simulation.
+ */
+
 #ifndef REQUEST_H
 #define REQUEST_H
 

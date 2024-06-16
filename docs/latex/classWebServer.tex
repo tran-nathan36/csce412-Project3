@@ -1,0 +1,122 @@
+\hypertarget{classWebServer}{}\doxysection{Web\+Server Class Reference}
+\label{classWebServer}\index{WebServer@{WebServer}}
+
+
+Represents a web server that processes requests.  
+
+
+
+
+{\ttfamily \#include $<$webserver.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWebServer_a5044757cd8574d3f62a7eec5d51fb00f}{Web\+Server}} (int id)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classWebServer}{Web\+Server}} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWebServer_aeb7683db74eccb456592ff2f1dc211d8}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the unique identifier of the server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebServer_a3f3357e20f9aca1f02acd771a2bb632e}{process\+Request}} (\mbox{\hyperlink{structRequest}{Request}} request)
+\begin{DoxyCompactList}\small\item\em Processes a request by setting the busy time and marking server as busy. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWebServer_a9a382239f638ad2b1f57621a37430874}{is\+Busy}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the server is currently busy processing a request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebServer_a411c2251f15e22b2b5724a6fc26e5c57}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the server\textquotesingle{}s status after processing a time unit. Decreases the busy time if the server is busy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebServer_a4753e00d4448f73a342b8a201e2b5331}{enqueue\+Request}} (const \mbox{\hyperlink{structRequest}{Request}} \&request)
+\begin{DoxyCompactList}\small\item\em Adds a request to the server\textquotesingle{}s queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a web server that processes requests. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWebServer_a5044757cd8574d3f62a7eec5d51fb00f}\label{classWebServer_a5044757cd8574d3f62a7eec5d51fb00f}} 
+\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\index{WebServer@{WebServer}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{WebServer()}{WebServer()}}
+{\footnotesize\ttfamily Web\+Server\+::\+Web\+Server (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classWebServer}{Web\+Server}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Unique identifier of the server. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWebServer_a4753e00d4448f73a342b8a201e2b5331}\label{classWebServer_a4753e00d4448f73a342b8a201e2b5331}} 
+\index{WebServer@{WebServer}!enqueueRequest@{enqueueRequest}}
+\index{enqueueRequest@{enqueueRequest}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{enqueueRequest()}{enqueueRequest()}}
+{\footnotesize\ttfamily void Web\+Server\+::enqueue\+Request (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structRequest}{Request}} \&}]{request }\end{DoxyParamCaption})}
+
+
+
+Adds a request to the server\textquotesingle{}s queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The request to be added to the queue. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWebServer_aeb7683db74eccb456592ff2f1dc211d8}\label{classWebServer_aeb7683db74eccb456592ff2f1dc211d8}} 
+\index{WebServer@{WebServer}!getId@{getId}}
+\index{getId@{getId}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Web\+Server\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the unique identifier of the server. 
+
+\begin{DoxyReturn}{Returns}
+The identifier of the server. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWebServer_a9a382239f638ad2b1f57621a37430874}\label{classWebServer_a9a382239f638ad2b1f57621a37430874}} 
+\index{WebServer@{WebServer}!isBusy@{isBusy}}
+\index{isBusy@{isBusy}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{isBusy()}{isBusy()}}
+{\footnotesize\ttfamily bool Web\+Server\+::is\+Busy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks if the server is currently busy processing a request. 
+
+\begin{DoxyReturn}{Returns}
+True if the server is busy, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWebServer_a3f3357e20f9aca1f02acd771a2bb632e}\label{classWebServer_a3f3357e20f9aca1f02acd771a2bb632e}} 
+\index{WebServer@{WebServer}!processRequest@{processRequest}}
+\index{processRequest@{processRequest}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{processRequest()}{processRequest()}}
+{\footnotesize\ttfamily void Web\+Server\+::process\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structRequest}{Request}}}]{request }\end{DoxyParamCaption})}
+
+
+
+Processes a request by setting the busy time and marking server as busy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The request to be processed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWebServer_a411c2251f15e22b2b5724a6fc26e5c57}\label{classWebServer_a411c2251f15e22b2b5724a6fc26e5c57}} 
+\index{WebServer@{WebServer}!update@{update}}
+\index{update@{update}!WebServer@{WebServer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Web\+Server\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the server\textquotesingle{}s status after processing a time unit. Decreases the busy time if the server is busy. 
+
+Updates the server\textquotesingle{}s status after processing a time unit. Decreases the busy time if the server is busy. If no request is currently being processed and there are pending requests, processes the next request from the queue. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{webserver_8h}{webserver.\+h}}\item 
+\mbox{\hyperlink{webserver_8cpp}{webserver.\+cpp}}\end{DoxyCompactItemize}

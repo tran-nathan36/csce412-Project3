@@ -1,3 +1,8 @@
+/**
+ * @file webserver.cpp
+ * @brief Implements the WebServer class methods.
+ */
+
 #include "webserver.h"
 #include <iostream>
 

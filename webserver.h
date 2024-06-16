@@ -1,3 +1,8 @@
+/**
+ * @file webserver.h
+ * @brief Defines the WebServer class used to process web requests in the load balancer simulation.
+ */
+
 #ifndef WEBSERVER_H
 #define WEBSERVER_H
 

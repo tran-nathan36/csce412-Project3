@@ -1,6 +1,6 @@
 /**
- * @file loadbalancer.h
- * @brief Implementation of LoadBalancer class for simulating load balancing of web requests.
+ * @file loadbalancer.cpp
+ * @brief Implements the LoadBalancer class methods for simulating load balancing among web servers.
  */
 
 #include "loadbalancer.h"

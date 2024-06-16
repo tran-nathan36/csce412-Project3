@@ -1,3 +1,8 @@
+/**
+ * @file main.cpp
+ * @brief Main function to simulate load balancing with user-defined parameters.
+ */
+
 #include "loadbalancer.h"
 #include <iostream>
 
