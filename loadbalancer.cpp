@@ -1,13 +1,27 @@
+/**
+ * @file loadbalancer.h
+ * @brief Implementation of LoadBalancer class for simulating load balancing of web requests.
+ */
+
 #include "loadbalancer.h"
 #include <iostream> // for cout
 #include <cstdlib>  // for rand()
 
+/**
+ * @brief Constructor for LoadBalancer class.
+ * @param numServers Number of web servers to initialize in the load balancer.
+ */
 LoadBalancer::LoadBalancer(int numServers) : servers(numServers, WebServer(0)), clock(0) {
+    // Initialize servers with sequential IDs starting from 1
     for (int i = 0; i < numServers; ++i) {
         servers[i] = WebServer(i + 1);
     }
 }
 
+/**
+ * @brief Simulates the load balancing process for a specified number of clock cycles.
+ * @param maxClock Maximum number of clock cycles to simulate.
+ */
 void LoadBalancer::simulate(int maxClock) {
     // Print initial size of the request queue
     std::cout << "Initial size of the request queue: " << requestQueue.size() << std::endl;
@@ -31,11 +45,18 @@ void LoadBalancer::simulate(int maxClock) {
     printStatus();
 }
 
+/**
+ * @brief Adds a new request to the request queue.
+ * @param request The request to add to the queue.
+ */
 void LoadBalancer::addRequest(const Request& request) {
     std::cout << "Adding request from " << request.ipIn << " to server queue" << std::endl;
     requestQueue.push(request);
 }
 
+/**
+ * @brief Updates the status of each server and assigns requests if servers are available.
+ */
 void LoadBalancer::updateServers() {
     for (auto& server : servers) {
         if (!requestQueue.empty() && !server.isBusy()) {
@@ -49,6 +70,9 @@ void LoadBalancer::updateServers() {
     }
 }
 
+/**
+ * @brief Prints the current status of the load balancer simulation.
+ */
 void LoadBalancer::printStatus() {
     std::cout << "Load Balancer Simulation Results:" << std::endl;
     std::cout << "Simulation Clock: " << clock << std::endl;
