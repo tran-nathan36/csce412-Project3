@@ -1,5 +1,5 @@
 #include "webserver.h"
-#include <iostream> // For std::cout
+#include <iostream>
 
 /**
  * @brief Constructor for WebServer class.

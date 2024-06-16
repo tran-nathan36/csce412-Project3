@@ -108,5 +108,5 @@ void LoadBalancer::printStatus() {
     // Print requests in queue
     std::cout << "Requests in Queue: " << requestQueue.size() << std::endl;
 
-    std::cout << std::endl; // Optional: Add an empty line for better readability
+    std::cout << std::endl;
 }

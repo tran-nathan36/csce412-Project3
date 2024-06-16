@@ -7,7 +7,7 @@
  */
 int main() {
     int numServers;
-    int simulationTime;
+    int simTime;
 
     // Prompt user to enter number of servers
     std::cout << "Enter number of servers: ";
@@ -15,13 +15,13 @@ int main() {
 
     // Prompt user to enter simulation time
     std::cout << "Enter simulation time (clock cycles): ";
-    std::cin >> simulationTime;
+    std::cin >> simTime;
 
     // Create a LoadBalancer object with user-defined number of servers
     LoadBalancer loadBalancer(numServers);
 
     // Simulate load balancing for the specified simulation time
-    loadBalancer.simulate(simulationTime);
+    loadBalancer.simulate(simTime);
 
     return 0;
 }
